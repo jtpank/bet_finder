@@ -1,0 +1,716 @@
+{
+  "Cal Poly Mustangs": {
+    "conference": "Big Sky Conference",
+    "conference_key": "big_sky",
+    "division": "fcs",
+    "espn_key": "CP"
+  },
+  "Eastern Washington Eagles": {
+    "conference": "Big Sky Conference",
+    "conference_key": "big_sky",
+    "division": "fcs",
+    "espn_key": "EWU"
+  },
+  "Idaho Vandals": {
+    "conference": "Big Sky Conference",
+    "conference_key": "big_sky",
+    "division": "fcs",
+    "espn_key": "IDHO"
+  },
+  "Montana Grizzlies": {
+    "conference": "Big Sky Conference",
+    "conference_key": "big_sky",
+    "division": "fcs",
+    "espn_key": "MONT"
+  },
+  "Montana State Bobcats": {
+    "conference": "Big Sky Conference",
+    "conference_key": "big_sky",
+    "division": "fcs",
+    "espn_key": "MTST"
+  },
+  "Northern Arizona Lumberjacks": {
+    "conference": "Big Sky Conference",
+    "conference_key": "big_sky",
+    "division": "fcs",
+    "espn_key": "NAU"
+  },
+  "Northern Colorado Bears": {
+    "conference": "Big Sky Conference",
+    "conference_key": "big_sky",
+    "division": "fcs",
+    "espn_key": "UNCO"
+  },
+  "Sacramento State Hornets": {
+    "conference": "Big Sky Conference",
+    "conference_key": "big_sky",
+    "division": "fcs",
+    "espn_key": "SAC"
+  },
+  "UC Davis Aggies": {
+    "conference": "Big Sky Conference",
+    "conference_key": "big_sky",
+    "division": "fcs",
+    "espn_key": "UCD"
+  },
+  "Weber State Wildcats": {
+    "conference": "Big Sky Conference",
+    "conference_key": "big_sky",
+    "division": "fcs",
+    "espn_key": "WEB"
+  },
+  "Idaho State Bengals": {
+    "conference": "Big Sky Conference",
+    "conference_key": "big_sky",
+    "division": "fcs",
+    "espn_key": "IDST"
+  },
+  "Portland State Vikings": {
+    "conference": "Big Sky Conference",
+    "conference_key": "big_sky",
+    "division": "fcs",
+    "espn_key": "PRST"
+  },
+  "Bryant Bulldogs": {
+    "conference": "Coastal Athletic Association",
+    "conference_key": "coastal",
+    "division": "fcs",
+    "espn_key": "BRY"
+  },
+  "Campbell Fighting Camels": {
+    "conference": "Coastal Athletic Association",
+    "conference_key": "coastal",
+    "division": "fcs",
+    "espn_key": "CAM"
+  },
+  "Elon Phoenix": {
+    "conference": "Coastal Athletic Association",
+    "conference_key": "coastal",
+    "division": "fcs",
+    "espn_key": "ELON"
+  },
+  "Hampton Pirates": {
+    "conference": "Coastal Athletic Association",
+    "conference_key": "coastal",
+    "division": "fcs",
+    "espn_key": "HAMP"
+  },
+  "Maine Black Bears": {
+    "conference": "Coastal Athletic Association",
+    "conference_key": "coastal",
+    "division": "fcs",
+    "espn_key": "ME"
+  },
+  "Monmouth Hawks": {
+    "conference": "Coastal Athletic Association",
+    "conference_key": "coastal",
+    "division": "fcs",
+    "espn_key": "MONM"
+  },
+  "New Hampshire Wildcats": {
+    "conference": "Coastal Athletic Association",
+    "conference_key": "coastal",
+    "division": "fcs",
+    "espn_key": "UNH"
+  },
+  "North Carolina A&T Aggies": {
+    "conference": "Coastal Athletic Association",
+    "conference_key": "coastal",
+    "division": "fcs",
+    "espn_key": "NCAT"
+  },
+  "Rhode Island Rams": {
+    "conference": "Coastal Athletic Association",
+    "conference_key": "coastal",
+    "division": "fcs",
+    "espn_key": "URI"
+  },
+  "Stony Brook Seawolves": {
+    "conference": "Coastal Athletic Association",
+    "conference_key": "coastal",
+    "division": "fcs",
+    "espn_key": "STBK"
+  },
+  "Towson Tigers": {
+    "conference": "Coastal Athletic Association",
+    "conference_key": "coastal",
+    "division": "fcs",
+    "espn_key": "TOW"
+  },
+  "UAlbany Great Danes": {
+    "conference": "Coastal Athletic Association",
+    "conference_key": "coastal",
+    "division": "fcs",
+    "espn_key": "UALB"
+  },
+  "Villanova Wildcats": {
+    "conference": "Coastal Athletic Association",
+    "conference_key": "coastal",
+    "division": "fcs",
+    "espn_key": "VILL"
+  },
+  "William & Mary Tribe": {
+    "conference": "Coastal Athletic Association",
+    "conference_key": "coastal",
+    "division": "fcs",
+    "espn_key": "W&M"
+  },
+  "Merrimack Warriors": {
+    "conference": "FCS Independents",
+    "conference_key": "fcs_ind",
+    "division": "fcs",
+    "espn_key": "MRMK"
+  },
+  "Sacred Heart Pioneers": {
+    "conference": "FCS Independents",
+    "conference_key": "fcs_ind",
+    "division": "fcs",
+    "espn_key": "SHU"
+  },
+  "Brown Bears": {
+    "conference": "Ivy League",
+    "conference_key": "ivy",
+    "division": "fcs",
+    "espn_key": "BRWN"
+  },
+  "Columbia Lions": {
+    "conference": "Ivy League",
+    "conference_key": "ivy",
+    "division": "fcs",
+    "espn_key": "COLU"
+  },
+  "Cornell Big Red": {
+    "conference": "Ivy League",
+    "conference_key": "ivy",
+    "division": "fcs",
+    "espn_key": "COR"
+  },
+  "Dartmouth Big Green": {
+    "conference": "Ivy League",
+    "conference_key": "ivy",
+    "division": "fcs",
+    "espn_key": "DART"
+  },
+  "Harvard Crimson": {
+    "conference": "Ivy League",
+    "conference_key": "ivy",
+    "division": "fcs",
+    "espn_key": "HARV"
+  },
+  "Pennsylvania Quakers": {
+    "conference": "Ivy League",
+    "conference_key": "ivy",
+    "division": "fcs",
+    "espn_key": "PENN"
+  },
+  "Princeton Tigers": {
+    "conference": "Ivy League",
+    "conference_key": "ivy",
+    "division": "fcs",
+    "espn_key": "PRIN"
+  },
+  "Yale Bulldogs": {
+    "conference": "Ivy League",
+    "conference_key": "ivy",
+    "division": "fcs",
+    "espn_key": "YALE"
+  },
+  "North Carolina Central Eagles": {
+    "conference": "Mid-Eastern Athletic Conference",
+    "conference_key": "meac",
+    "division": "fcs",
+    "espn_key": "NCCU"
+  },
+  "Delaware State Hornets": {
+    "conference": "Mid-Eastern Athletic Conference",
+    "conference_key": "meac",
+    "division": "fcs",
+    "espn_key": "DSU"
+  },
+  "Howard Bison": {
+    "conference": "Mid-Eastern Athletic Conference",
+    "conference_key": "meac",
+    "division": "fcs",
+    "espn_key": "HOW"
+  },
+  "Morgan State Bears": {
+    "conference": "Mid-Eastern Athletic Conference",
+    "conference_key": "meac",
+    "division": "fcs",
+    "espn_key": "MORG"
+  },
+  "Norfolk State Spartans": {
+    "conference": "Mid-Eastern Athletic Conference",
+    "conference_key": "meac",
+    "division": "fcs",
+    "espn_key": "NORF"
+  },
+  "South Carolina State Bulldogs": {
+    "conference": "Mid-Eastern Athletic Conference",
+    "conference_key": "meac",
+    "division": "fcs",
+    "espn_key": "SCST"
+  },
+  "Illinois State Redbirds": {
+    "conference": "Missouri Valley Football Conference",
+    "conference_key": "mvfc",
+    "division": "fcs",
+    "espn_key": "ILST"
+  },
+  "Indiana State Sycamores": {
+    "conference": "Missouri Valley Football Conference",
+    "conference_key": "mvfc",
+    "division": "fcs",
+    "espn_key": "INST"
+  },
+  "Murray State Racers": {
+    "conference": "Missouri Valley Football Conference",
+    "conference_key": "mvfc",
+    "division": "fcs",
+    "espn_key": "MUR"
+  },
+  "North Dakota Fighting Hawks": {
+    "conference": "Missouri Valley Football Conference",
+    "conference_key": "mvfc",
+    "division": "fcs",
+    "espn_key": "UND"
+  },
+  "North Dakota State Bison": {
+    "conference": "Missouri Valley Football Conference",
+    "conference_key": "mvfc",
+    "division": "fcs",
+    "espn_key": "NDSU"
+  },
+  "Northern Iowa Panthers": {
+    "conference": "Missouri Valley Football Conference",
+    "conference_key": "mvfc",
+    "division": "fcs",
+    "espn_key": "UNI"
+  },
+  "South Dakota Coyotes": {
+    "conference": "Missouri Valley Football Conference",
+    "conference_key": "mvfc",
+    "division": "fcs",
+    "espn_key": "SDAK"
+  },
+  "South Dakota State Jackrabbits": {
+    "conference": "Missouri Valley Football Conference",
+    "conference_key": "mvfc",
+    "division": "fcs",
+    "espn_key": "SDST"
+  },
+  "Southern Illinois Salukis": {
+    "conference": "Missouri Valley Football Conference",
+    "conference_key": "mvfc",
+    "division": "fcs",
+    "espn_key": "SIU"
+  },
+  "Youngstown State Penguins": {
+    "conference": "Missouri Valley Football Conference",
+    "conference_key": "mvfc",
+    "division": "fcs",
+    "espn_key": "YSU"
+  },
+  "Central Connecticut Blue Devils": {
+    "conference": "Northeast Conference",
+    "conference_key": "northeast",
+    "division": "fcs",
+    "espn_key": "CCSU"
+  },
+  "Duquesne Dukes": {
+    "conference": "Northeast Conference",
+    "conference_key": "northeast",
+    "division": "fcs",
+    "espn_key": "DUQ"
+  },
+  "Long Island University Sharks": {
+    "conference": "Northeast Conference",
+    "conference_key": "northeast",
+    "division": "fcs",
+    "espn_key": "LIU"
+  },
+  "Mercyhurst Lakers": {
+    "conference": "Northeast Conference",
+    "conference_key": "northeast",
+    "division": "fcs",
+    "espn_key": "MERC"
+  },
+  "New Haven Chargers": {
+    "conference": "Northeast Conference",
+    "conference_key": "northeast",
+    "division": "fcs",
+    "espn_key": "NHVN"
+  },
+  "Robert Morris Colonials": {
+    "conference": "Northeast Conference",
+    "conference_key": "northeast",
+    "division": "fcs",
+    "espn_key": "RMU"
+  },
+  "Saint Francis Red Flash": {
+    "conference": "Northeast Conference",
+    "conference_key": "northeast",
+    "division": "fcs",
+    "espn_key": "SFPA"
+  },
+  "Stonehill Skyhawks": {
+    "conference": "Northeast Conference",
+    "conference_key": "northeast",
+    "division": "fcs",
+    "espn_key": "STO"
+  },
+  "Wagner Seahawks": {
+    "conference": "Northeast Conference",
+    "conference_key": "northeast",
+    "division": "fcs",
+    "espn_key": "WAG"
+  },
+  "Charleston Southern Buccaneers": {
+    "conference": "OVC-Big South Association",
+    "conference_key": "ovc_big_south",
+    "division": "fcs",
+    "espn_key": "CHSO"
+  },
+  "Eastern Illinois Panthers": {
+    "conference": "OVC-Big South Association",
+    "conference_key": "ovc_big_south",
+    "division": "fcs",
+    "espn_key": "EIU"
+  },
+  "Gardner-Webb Runnin' Bulldogs": {
+    "conference": "OVC-Big South Association",
+    "conference_key": "ovc_big_south",
+    "division": "fcs",
+    "espn_key": "GWEB"
+  },
+  "Lindenwood Lions": {
+    "conference": "OVC-Big South Association",
+    "conference_key": "ovc_big_south",
+    "division": "fcs",
+    "espn_key": "LIN"
+  },
+  "Southeast Missouri State Redhawks": {
+    "conference": "OVC-Big South Association",
+    "conference_key": "ovc_big_south",
+    "division": "fcs",
+    "espn_key": "SEMO"
+  },
+  "Tennessee State Tigers": {
+    "conference": "OVC-Big South Association",
+    "conference_key": "ovc_big_south",
+    "division": "fcs",
+    "espn_key": "TNST"
+  },
+  "Tennessee Tech Golden Eagles": {
+    "conference": "OVC-Big South Association",
+    "conference_key": "ovc_big_south",
+    "division": "fcs",
+    "espn_key": "TNTC"
+  },
+  "UT Martin Skyhawks": {
+    "conference": "OVC-Big South Association",
+    "conference_key": "ovc_big_south",
+    "division": "fcs",
+    "espn_key": "UTM"
+  },
+  "Western Illinois Leathernecks": {
+    "conference": "OVC-Big South Association",
+    "conference_key": "ovc_big_south",
+    "division": "fcs",
+    "espn_key": "WIU"
+  },
+  "Bucknell Bison": {
+    "conference": "Patriot League",
+    "conference_key": "patriot",
+    "division": "fcs",
+    "espn_key": "BUCK"
+  },
+  "Colgate Raiders": {
+    "conference": "Patriot League",
+    "conference_key": "patriot",
+    "division": "fcs",
+    "espn_key": "COLG"
+  },
+  "Fordham Rams": {
+    "conference": "Patriot League",
+    "conference_key": "patriot",
+    "division": "fcs",
+    "espn_key": "FOR"
+  },
+  "Georgetown Hoyas": {
+    "conference": "Patriot League",
+    "conference_key": "patriot",
+    "division": "fcs",
+    "espn_key": "GTWN"
+  },
+  "Holy Cross Crusaders": {
+    "conference": "Patriot League",
+    "conference_key": "patriot",
+    "division": "fcs",
+    "espn_key": "HC"
+  },
+  "Lafayette Leopards": {
+    "conference": "Patriot League",
+    "conference_key": "patriot",
+    "division": "fcs",
+    "espn_key": "LAF"
+  },
+  "Lehigh Mountain Hawks": {
+    "conference": "Patriot League",
+    "conference_key": "patriot",
+    "division": "fcs",
+    "espn_key": "LEH"
+  },
+  "Richmond Spiders": {
+    "conference": "Patriot League",
+    "conference_key": "patriot",
+    "division": "fcs",
+    "espn_key": "RICH"
+  },
+  "Butler Bulldogs": {
+    "conference": "Pioneer Football League",
+    "conference_key": "pioneer",
+    "division": "fcs",
+    "espn_key": "BUT"
+  },
+  "Davidson Wildcats": {
+    "conference": "Pioneer Football League",
+    "conference_key": "pioneer",
+    "division": "fcs",
+    "espn_key": "DAV"
+  },
+  "Dayton Flyers": {
+    "conference": "Pioneer Football League",
+    "conference_key": "pioneer",
+    "division": "fcs",
+    "espn_key": "DAY"
+  },
+  "Drake Bulldogs": {
+    "conference": "Pioneer Football League",
+    "conference_key": "pioneer",
+    "division": "fcs",
+    "espn_key": "DRKE"
+  },
+  "Marist Red Foxes": {
+    "conference": "Pioneer Football League",
+    "conference_key": "pioneer",
+    "division": "fcs",
+    "espn_key": "MRST"
+  },
+  "Morehead State Eagles": {
+    "conference": "Pioneer Football League",
+    "conference_key": "pioneer",
+    "division": "fcs",
+    "espn_key": "MORE"
+  },
+  "Presbyterian Blue Hose": {
+    "conference": "Pioneer Football League",
+    "conference_key": "pioneer",
+    "division": "fcs",
+    "espn_key": "PRES"
+  },
+  "San Diego Toreros": {
+    "conference": "Pioneer Football League",
+    "conference_key": "pioneer",
+    "division": "fcs",
+    "espn_key": "USD"
+  },
+  "St. Thomas-Minnesota Tommies": {
+    "conference": "Pioneer Football League",
+    "conference_key": "pioneer",
+    "division": "fcs",
+    "espn_key": "STMN"
+  },
+  "Stetson Hatters": {
+    "conference": "Pioneer Football League",
+    "conference_key": "pioneer",
+    "division": "fcs",
+    "espn_key": "STET"
+  },
+  "Valparaiso Beacons": {
+    "conference": "Pioneer Football League",
+    "conference_key": "pioneer",
+    "division": "fcs",
+    "espn_key": "VAL"
+  },
+  "Chattanooga Mocs": {
+    "conference": "Southern Conference",
+    "conference_key": "southern",
+    "division": "fcs",
+    "espn_key": "UTC"
+  },
+  "East Tennessee State Buccaneers": {
+    "conference": "Southern Conference",
+    "conference_key": "southern",
+    "division": "fcs",
+    "espn_key": "ETSU"
+  },
+  "Furman Paladins": {
+    "conference": "Southern Conference",
+    "conference_key": "southern",
+    "division": "fcs",
+    "espn_key": "FUR"
+  },
+  "Mercer Bears": {
+    "conference": "Southern Conference",
+    "conference_key": "southern",
+    "division": "fcs",
+    "espn_key": "MER"
+  },
+  "Samford Bulldogs": {
+    "conference": "Southern Conference",
+    "conference_key": "southern",
+    "division": "fcs",
+    "espn_key": "SAM"
+  },
+  "The Citadel Bulldogs": {
+    "conference": "Southern Conference",
+    "conference_key": "southern",
+    "division": "fcs",
+    "espn_key": "CIT"
+  },
+  "VMI Keydets": {
+    "conference": "Southern Conference",
+    "conference_key": "southern",
+    "division": "fcs",
+    "espn_key": "VMI"
+  },
+  "Western Carolina Catamounts": {
+    "conference": "Southern Conference",
+    "conference_key": "southern",
+    "division": "fcs",
+    "espn_key": "WCU"
+  },
+  "Wofford Terriers": {
+    "conference": "Southern Conference",
+    "conference_key": "southern",
+    "division": "fcs",
+    "espn_key": "WOF"
+  },
+  "Alabama A&M Bulldogs": {
+    "conference": "Southwestern Athletic Conference",
+    "conference_key": "southwestern",
+    "division": "fcs",
+    "espn_key": "AAMU"
+  },
+  "Alabama State Hornets": {
+    "conference": "Southwestern Athletic Conference",
+    "conference_key": "southwestern",
+    "division": "fcs",
+    "espn_key": "ALST"
+  },
+  "Bethune-Cookman Wildcats": {
+    "conference": "Southwestern Athletic Conference",
+    "conference_key": "southwestern",
+    "division": "fcs",
+    "espn_key": "BCU"
+  },
+  "Florida A&M Rattlers": {
+    "conference": "Southwestern Athletic Conference",
+    "conference_key": "southwestern",
+    "division": "fcs",
+    "espn_key": "FAMU"
+  },
+  "Jackson State Tigers": {
+    "conference": "Southwestern Athletic Conference",
+    "conference_key": "southwestern",
+    "division": "fcs",
+    "espn_key": "JKST"
+  },
+  "Mississippi Valley State Delta Devils": {
+    "conference": "Southwestern Athletic Conference",
+    "conference_key": "southwestern",
+    "division": "fcs",
+    "espn_key": "MVSU"
+  },
+  "Alcorn State Braves": {
+    "conference": "Southwestern Athletic Conference",
+    "conference_key": "southwestern",
+    "division": "fcs",
+    "espn_key": "ALCN"
+  },
+  "Arkansas-Pine Bluff Golden Lions": {
+    "conference": "Southwestern Athletic Conference",
+    "conference_key": "southwestern",
+    "division": "fcs",
+    "espn_key": "UAPB"
+  },
+  "Grambling Tigers": {
+    "conference": "Southwestern Athletic Conference",
+    "conference_key": "southwestern",
+    "division": "fcs",
+    "espn_key": "GRAM"
+  },
+  "Prairie View A&M Panthers": {
+    "conference": "Southwestern Athletic Conference",
+    "conference_key": "southwestern",
+    "division": "fcs",
+    "espn_key": "PV"
+  },
+  "Texas Southern Tigers": {
+    "conference": "Southwestern Athletic Conference",
+    "conference_key": "southwestern",
+    "division": "fcs",
+    "espn_key": "TXSO"
+  },
+  "Southern Jaguars": {
+    "conference": "Southwestern Athletic Conference",
+    "conference_key": "southwestern",
+    "division": "fcs",
+    "espn_key": "SOU"
+  },
+  "Tarleton State Texans": {
+    "conference": "United Athletic Conference",
+    "conference_key": "united",
+    "division": "fcs",
+    "espn_key": "TAR"
+  },
+  "Abilene Christian Wildcats": {
+    "conference": "United Athletic Conference",
+    "conference_key": "united",
+    "division": "fcs",
+    "espn_key": "ACU"
+  },
+  "Austin Peay Governors": {
+    "conference": "United Athletic Conference",
+    "conference_key": "united",
+    "division": "fcs",
+    "espn_key": "APSU"
+  },
+  "Central Arkansas Bears": {
+    "conference": "United Athletic Conference",
+    "conference_key": "united",
+    "division": "fcs",
+    "espn_key": "CARK"
+  },
+  "Eastern Kentucky Colonels": {
+    "conference": "United Athletic Conference",
+    "conference_key": "united",
+    "division": "fcs",
+    "espn_key": "EKU"
+  },
+  "North Alabama Lions": {
+    "conference": "United Athletic Conference",
+    "conference_key": "united",
+    "division": "fcs",
+    "espn_key": "UNA"
+  },
+  "Southern Utah Thunderbirds": {
+    "conference": "United Athletic Conference",
+    "conference_key": "united",
+    "division": "fcs",
+    "espn_key": "SUU"
+  },
+  "Utah Tech Trailblazers": {
+    "conference": "United Athletic Conference",
+    "conference_key": "united",
+    "division": "fcs",
+    "espn_key": "UTU"
+  },
+  "West Georgia Wolves": {
+    "conference": "United Athletic Conference",
+    "conference_key": "united",
+    "division": "fcs",
+    "espn_key": "WGA"
+  }
+}
