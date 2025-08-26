@@ -127,7 +127,7 @@ class  CfbTeamDb:
         return True
 
     def load_single_obj(self, obj: dict):
-        team_name = obj.get("team_name", "").strip()
+        team_name = obj.get("team_name", "").strip().lower()
         if not team_name:
             print("[warn] Missing team_name, skipping.")
             return False
@@ -147,7 +147,7 @@ class  CfbTeamDb:
         print("[info] Creating table and loading dict...")
         self._cur.executescript(self._ddl)
         self._cur.execute(self._upsert_sql, (
-            obj.get("team_name"),
+            team_name,
             obj.get("conference"),
             obj.get("conference_key"),
             obj.get("division"),
@@ -192,16 +192,22 @@ class  CfbTeamDb:
 if __name__=="__main__":
     print("Creating connection")
     db_file_path = "./new_database.db"
-    input_json = "./updated_fbs_cfb_teams.json"
+    fcs_json = "./updated_fcs_cfb_teams.json"
+    fbs_json = "./updated_fbs_cfb_teams.json"
     conn = sqlite3.connect(db_file_path)
     db = CfbTeamDb(conn)
-    with open(input_json, "r") as jsonfile:
+    with open(fbs_json, "r") as jsonfile:
         data = json.load(jsonfile)
         for k,v in data.items():
             data_obj = v
             data_obj["team_name"] = k
             db.load_single_obj(data_obj)
-    #not_is_loaded = db.load_mapping(cfb_tricodes)
+    with open(fcs_json, "r") as jsonfile:
+        data = json.load(jsonfile)
+        for k,v in data.items():
+            data_obj = v
+            data_obj["team_name"] = k
+            db.load_single_obj(data_obj)
     db.select_print_all()
     db.close()
 

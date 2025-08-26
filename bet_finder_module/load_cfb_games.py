@@ -22,15 +22,15 @@ def parse_and_load(csv_path: Path, game_db: CfbGameDb):
             date = row[CsvKeys.DATE]
             team_rank = row[CsvKeys.TEAM_RANK]
             team = row[CsvKeys.TEAM].lower().strip()
-            team_conf = row[CsvKeys.TEAM_CONF]
+            team_conf = row[CsvKeys.TEAM_CONF].lower().strip()
             team_division = row[CsvKeys.TEAM_DIVISION]
-            coach = row[CsvKeys.COACH]
+            coach = row[CsvKeys.COACH].lower().strip()
             team_spread = row[CsvKeys.TEAM_SPREAD]
             opp_rank = row[CsvKeys.OPP_RANK]
             opponent = row[CsvKeys.OPPONENT].lower().strip()
-            opp_conf = row[CsvKeys.OPP_CONF]
+            opp_conf = row[CsvKeys.OPP_CONF].lower().strip()
             opp_division = row[CsvKeys.OPP_DIVISION]
-            opp_coach = row[CsvKeys.OPP_COACH]
+            opp_coach = row[CsvKeys.OPP_COACH].lower().strip()
             opp_spread = row[CsvKeys.OPP_SPREAD]
             result = row[CsvKeys.RESULT]
             team_points = row[CsvKeys.TEAM_POINTS]
@@ -39,7 +39,7 @@ def parse_and_load(csv_path: Path, game_db: CfbGameDb):
             total_points = row[CsvKeys.TOTAL_POINTS]
             team_season_id = row[CsvKeys.TEAM_SEASON_ID]
             team_game_no = row[CsvKeys.TEAM_GAME_NO]
-            underdog_favorite = row[CsvKeys.UNDERDOG_FAVORITE]
+            underdog_favorite = row[CsvKeys.UNDERDOG_FAVORITE].lower().strip()
             covered = row[CsvKeys.COVERED]
             team_wins_entering = row[CsvKeys.TEAM_WINS_ENTERING]
             team_losses_entering = row[CsvKeys.TEAM_LOSSES_ENTERING]
@@ -49,16 +49,16 @@ def parse_and_load(csv_path: Path, game_db: CfbGameDb):
             opp_ties_entering = row[CsvKeys.OPP_TIES_ENTERING]
             over_under = row[CsvKeys.OVER_UNDER]
             over_or_under_result = row[CsvKeys.OVER_OR_UNDER_RESULT]
-            if team not in (k.lower().strip() for k in cfb_tricodes.keys()):
-                if team not in invalid_cfb_set:
-                    invalid_cfb_set.add(team)
-                    print(f"{team} not valid!")
-                continue
-            if opponent not in (k.lower().strip() for k in cfb_tricodes.keys()):
-                if opponent not in invalid_cfb_set:
-                    invalid_cfb_set.add(opponent)
-                    print(f"{opponent} not valid!")
-                continue
+            # if team not in (k.lower().strip() for k in cfb_tricodes.keys()):
+            #     if team not in invalid_cfb_set:
+            #         invalid_cfb_set.add(team)
+            #         print(f"{team} not valid!")
+            #     continue
+            # if opponent not in (k.lower().strip() for k in cfb_tricodes.keys()):
+            #     if opponent not in invalid_cfb_set:
+            #         invalid_cfb_set.add(opponent)
+            #         print(f"{opponent} not valid!")
+            #     continue
             # assert team in cfb_tricodes.keys(), f"{team} not valid"
             # assert opponent in cfb_tricodes.keys(), f"{opponent} not valid"
 
@@ -93,12 +93,12 @@ def parse_and_load(csv_path: Path, game_db: CfbGameDb):
         print(f"[info] {count_inserted} games inserted, {count_skipped} skipped (already existed).")
 
 def main():
-    conn = sqlite3.connect("./cfb_database.db")
+    conn = sqlite3.connect("./new_database.db")
     game_db = CfbGameDb(conn)
-    game_db.create_table_if_not_exists()
-    csv_path = Path("../database/cfb_db_2024.csv")
-    parse_and_load(csv_path=csv_path, game_db=game_db)
-    # game_db.select_print_all()
+    # game_db.create_table_if_not_exists()
+    # csv_path = Path("../database/cfb_db_2024_normalized.csv")
+    # parse_and_load(csv_path=csv_path, game_db=game_db)
+    game_db.select_print_all()
     game_db.close()
 
 if __name__=="__main__":

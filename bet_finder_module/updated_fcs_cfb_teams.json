@@ -712,5 +712,65 @@
     "conference_key": "united",
     "division": "fcs",
     "espn_key": "WGA"
+  },
+    "Nicholls Colonels": {
+    "conference": "Southland Conference",
+    "conference_key": "southland",
+    "division": "fcs",
+    "espn_key": "NICH"
+  },
+  "East Texas A&M Lions": {
+    "conference": "Southland Conference",
+    "conference_key": "southland",
+    "division": "fcs",
+    "espn_key": "ETAM"
+  },
+  "Houston Christian Huskies": {
+    "conference": "Southland Conference",
+    "conference_key": "southland",
+    "division": "fcs",
+    "espn_key": "HCU"
+  },
+  "Lamar Cardinals": {
+    "conference": "Southland Conference",
+    "conference_key": "southland",
+    "division": "fcs",
+    "espn_key": "LAM"
+  },
+  "McNeese Cowboys": {
+    "conference": "Southland Conference",
+    "conference_key": "southland",
+    "division": "fcs",
+    "espn_key": "MCN"
+  },
+  "Northwestern State Demons": {
+    "conference": "Southland Conference",
+    "conference_key": "southland",
+    "division": "fcs",
+    "espn_key": "NWST"
+  },
+  "SE Louisiana Lions": {
+    "conference": "Southland Conference",
+    "conference_key": "southland",
+    "division": "fcs",
+    "espn_key": "SELA"
+  },
+  "Stephen F. Austin Lumberjacks": {
+    "conference": "Southland Conference",
+    "conference_key": "southland",
+    "division": "fcs",
+    "espn_key": "SFA"
+  },
+  "UT Rio Grande Valley Vaqueros": {
+    "conference": "Southland Conference",
+    "conference_key": "southland",
+    "division": "fcs",
+    "espn_key": "RGV"
+  },
+  "Incarnate Word Cardinals": {
+    "conference": "Southland Conference",
+    "conference_key": "southland",
+    "division": "fcs",
+    "espn_key": "UIW"
   }
 }

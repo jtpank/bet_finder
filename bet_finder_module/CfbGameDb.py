@@ -98,7 +98,7 @@ class CfbGameDb:
 
     def select_print_all(self):
         self._cur.execute("""
-            SELECT g.*, t1.name as home_team, t2.name as away_team
+            SELECT g.*, t1.team_name as home_team, t2.team_name as away_team
             FROM games g
             JOIN teams t1 ON g.team_id = t1.id
             JOIN teams t2 ON g.opponent_id = t2.id
@@ -107,6 +107,7 @@ class CfbGameDb:
         rows = self._cur.fetchall()
         for row in rows:
             print(row)
+            break
         return rows
 
     def get_team_id_by_name(self, name: str):
@@ -115,7 +116,7 @@ class CfbGameDb:
             self._cur.execute(
                 """
                 SELECT id FROM teams
-                WHERE LOWER(TRIM(name)) = ?
+                WHERE LOWER(TRIM(team_name)) = ?
                 """,
                 (norm,)
             )
@@ -142,7 +143,6 @@ class CfbGameDb:
         except Exception as e:
             print(f"[error] Failed to check game existence: {e}")
             return False
-
 
     def close(self):
         try:

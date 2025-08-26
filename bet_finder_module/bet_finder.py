@@ -20,38 +20,43 @@ class BetFinder:
         """
         Returns the percentage of games where `team_name` covered the spread 
         between `start_year` and `end_year`.
-
-        Assumes 'covered' field is a string ("yes", "no", etc.).
-
-        If `conferences` is provided, only include games where opp_conf is in that list.
         """
+
         base_query = """
             SELECT COUNT(*) as total_games,
                 SUM(CASE WHEN LOWER(covered) = LOWER(?) THEN 1 ELSE 0 END) as covered_games
             FROM games
-            WHERE team = ?
+            WHERE LOWER(team) = LOWER(?)
             AND season BETWEEN ? AND ?
         """
 
         params: List = [covered_value, team_name, start_year, end_year]
 
-        # Add conference filter if provided
         if conferences:
             placeholders = ",".join(["?"] * len(conferences))
             base_query += f" AND opp_conf IN ({placeholders})"
             params.extend(conferences)
 
         cur = self.conn.cursor()
+        
+        # 🔍 Debugging
+        print("\n=== [DEBUG] Running did_cover ===")
+        print(f"Team: {team_name} | Start: {start_year} | End: {end_year} | Covered: {covered_value}")
+        print(f"Params: {params}")
+
         cur.execute(base_query, params)
         row = cur.fetchone()
+
+        print(f"[DEBUG] Query result row: {row}")
+
+        if not row or row["total_games"] == 0:
+            print(f"[WARN] No games found for team '{team_name}' between {start_year} and {end_year}")
+            return None
 
         total = row["total_games"]
         covered = row["covered_games"]
 
-        if total == 0:
-            print(f"[warn] No games found for team '{team_name}' between {start_year} and {end_year}")
-            return None
-
+        print(f"[DEBUG] total: {total}, covered: {covered}")
         return round((covered / total) * 100, 2)
     
     def win_loss_record(
@@ -198,7 +203,7 @@ class BetFinder:
             SELECT
                 date,
                 season,
-                team,
+                team_name,
                 opponent,
                 team_points,
                 opp_points,
@@ -337,7 +342,7 @@ def analyze_teams(teams: List[str], start_year: int, end_year: int, bf: BetFinde
     assert start_year <= end_year, "start year must be less than or equal to end year"
 
     for team in teams:
-        print(f"\n--- {team.upper()} ---")
+        print(f"\n--- {team} ---")
         
         result = bf.did_cover(team, start_year, end_year, conferences=conferences)
         if result is not None:
@@ -351,17 +356,32 @@ def analyze_teams(teams: List[str], start_year: int, end_year: int, bf: BetFinde
         if under_pct is not None:
             print(f"{team} hit the **under** {under_pct}% of the time.")
 
+def print_table_columns(db_path: str, table_name: str):
+    conn = sqlite3.connect(db_path)
+    cur = conn.cursor()
+
+    cur.execute(f"PRAGMA table_info({table_name})")
+    columns = cur.fetchall()
+
+    print(f"Columns in '{table_name}':")
+    for col in columns:
+        print(f"- {col[1]}")  # col[1] is the column name
+
+    conn.close()
 
 # Example usage:
 if __name__ == "__main__":
-    bf = BetFinder("cfb_database.db")  # update path to your SQLite DB
-    teams = ["miami", "notre dame"] 
+    db_path = "new_database.db"
+    bf = BetFinder(db_path)  # update path to your SQLite DB
+    teams = ["ucla bruins"]
+    teams = [k.strip().lower() for k in teams]
     # teams = ["ucla", "utah"]
     conferences = ["ACC", "PAC-12", "SEC", "Big Ten", "Big 12", "Independents"]
+    conferences = [k.strip().lower() for k in conferences]
     # "syracuse", "tennessee", "florida atlantic", "alabama", "florida state", "coastal carolina", "virginia", "clemson", "lsu", "ucla", "utah"]
     start_year = 2023
     end_year = 2024
-    analyze_teams(teams, start_year, end_year, bf, conferences)
+    analyze_teams(teams, start_year, end_year, bf, conferences=conferences)
     
     # result = bf.did_hit_over_under_in_date_window(
     #     start_year=2000,
